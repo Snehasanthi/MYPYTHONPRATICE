@@ -1,0 +1,19 @@
+INPUT:
+Line 1: A string message.
+
+OUTPUT:
+Line 1: The number of letters inside the message.
+
+EXAMPLE:
+Input
+I am
+Output
+3
+SOLUTION:
+a="asdfghjkl"
+c=0
+m=input()
+for i in m:
+     if i in a:
+        c+=1
+print(c)
