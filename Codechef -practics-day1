@@ -1,0 +1,67 @@
+codechef:
+Chef classifies a day to be either rainy, cloudy, or clear.
+
+In a particular week, Chef finds 
+𝑋
+X days to be rainy and 
+𝑌
+Y days to be cloudy.
+Find the number of clear days in the week.
+
+Input Format
+The first and only line of input will contain two space-separated integers 
+𝑋
+X and 
+𝑌
+Y, denoting the number of rainy and cloudy days in the week.
+Output Format
+Output the number of clear days in the week.
+
+Constraints
+0
+≤
+𝑋
+,
+𝑌
+≤
+7
+0≤X,Y≤7
+0
+≤
+𝑋
++
+𝑌
+≤
+7
+0≤X+Y≤7
+Sample 1:
+Input
+Output
+2 3
+2
+Explanation:
+There are 
+7
+7 days in a week. If there are 
+2
+2 rainy days and 
+3
+3 cloudy days, then the remaining 
+7
+−
+2
+−
+3
+=
+2
+7−2−3=2 days are clear.
+
+Sample 2:
+Input
+Output
+3 4
+0
+OUTPUT:
+X, Y = map(int, input().split())
+clear_days = 7 - X - Y
+print(clear_days)
