@@ -1,0 +1,31 @@
+Q1]Write a program that will give suggested footwear based on the weather.
+Ask the user about the weather outside with three options (sunny, rainy, or snowy) and give the correct footwear suggestion (sneakers, gumboot, or boots). 
+Each option should be written as its function that prints a message based on the input. 
+
+Note: Using Only Function.
+
+Input & Output Format:
+The Input consists of a season name.
+
+The Output should Suggest the Footwear according to the season.
+
+Sample Input & Output :
+
+What is the weather like today? (sunny, rainy, snowy): sunny
+
+It is sunny day, good to wear sneakers!
+
+OUTPUT:
+def weather(txt):
+    if(txt=="sunny"):
+        return "It is sunny day, good to wear sneaker!"
+    elif(txt=="rainy"):
+        return "oops! its raining,better wear gumbot"
+    elif(txt=="snowy"):
+        return "Wow! its snowing, better wear boot"
+    else:
+        return f"no footwear avaliable for {txt}"
+        
+#main program
+txt=input()
+print(weather(txt))
